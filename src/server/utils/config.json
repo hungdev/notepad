@@ -22,7 +22,7 @@
   },
   "cello": {
     "name": "cello",
-    "locked": false,
+    "locked": true,
     "edit": true,
     "pass": "",
     "user": "cee"
