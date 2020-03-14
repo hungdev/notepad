@@ -53,8 +53,8 @@ router.get("/", (req, res) => {
   if (curFileInf.locked && pass === curFileInf.pass) {
     return res.send({
       content: content,
-      locked: curFileInf.locked,
-      edit: curFileInf.edit,
+      locked: false,
+      edit: true,
       status: 'ok'
     });
   }
