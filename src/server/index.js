@@ -30,7 +30,7 @@ server.use(cors())
 server.use('/api/word', wordRoute);
 // server.use('/api/config', configRoute);
 // server.use('/api/sync', syncRoute);
-// server.use('/', express.static(__dirname + '/../client'));
+server.use('/', express.static(__dirname + '/../client'));
 
 appServer.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
