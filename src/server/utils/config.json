@@ -1,0 +1,30 @@
+{
+  "abc": {
+    "name": "abc",
+    "locked": true,
+    "edit": true,
+    "pass": "open",
+    "user": "cee"
+  },
+  "ghi": {
+    "name": "ghi",
+    "locked": false,
+    "edit": true,
+    "pass": "open",
+    "user": "cee"
+  },
+  "def": {
+    "name": "ghi",
+    "locked": false,
+    "edit": false,
+    "pass": "",
+    "user": "cee"
+  },
+  "cello": {
+    "name": "cello",
+    "locked": false,
+    "edit": true,
+    "pass": "",
+    "user": "cee"
+  }
+}
