@@ -34,6 +34,7 @@
     "react": "PORT=3000 react-scripts start",
     "server": "nodemon --exec babel-node src/server/index.js --port 8080",
     "runafterbuild": "node ./dist/server/",
+    "runafterbuildnodemon": "node ./dist/server/",
     "runnodemon": "nodemon ./src/server --exec babel-node"
   },
   "eslintConfig": {
