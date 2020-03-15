@@ -8,6 +8,7 @@ import { Input, Modal, Button, Layout, Menu, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 import { PassModal } from './components'
 import { UnlockFilled, LockFilled } from '@ant-design/icons';
+import bg from './assets/background-textarea.png'
 
 const { TextArea } = Input;
 const { Header, Content, Footer } = Layout;
@@ -135,7 +136,15 @@ class App extends Component {
             <TextArea
               onChange={e => this.handleValueChange(e.target.value)}
               value={value}
-              style={{ height: '90%' }}
+              style={{
+                height: '90%',
+                backgroundImage: `url(${bg})`,
+                backgroundAttachment: 'local',
+                backgroundRepeat: 'no-repeat',
+                paddingLeft: 35,
+                paddingTop: 10,
+                borderColor: '#ccc',
+              }}
               disabled={!properties.edit}
             // rows={4}
             />
