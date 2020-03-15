@@ -110,10 +110,11 @@ class App extends Component {
 
   render() {
     const { value, tab, properties, visible, status } = this.state
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     return (
       <Layout className="layout">
-        <Content style={{ padding: '0 50px' }}>
-          <div style={{ margin: '10px 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Content style={{ padding: `0 ${isMobile ? '20px' : '50px'}`, height: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ cursor: 'pointer' }} onClick={() => window.location.href = window.location.origin}>
               <img
                 src={require("./assets/notepad.png")}
