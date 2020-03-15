@@ -26,13 +26,15 @@
     "eject": "react-scripts eject",
     "build-client": "react-scripts build && mkdir -p dist && rm -rf dist/client && mv build dist/client",
     "build-server": "./node_modules/.bin/babel --presets=@babel/env,@babel/react --plugins=@babel/plugin-proposal-class-properties -d dist/server/ src/server",
-    "build": "npm run build-client && npm run build-server",
+    "fixconfig": "cp ./src/server/utils/config.json ./dist/server/utils/",
+    "build": "npm run build-client && npm run build-server && npm run fixconfig",
     "watch": "./node_modules/.bin/nodemon --watch src --exec yarn start",
     "start": "yarn build && node ./dist/server/index.js",
     "prestart": "tailwind build ./src/frontend/src/tailwind.css -c ./tailwind.config.js -o ./src/frontend/src/index.css",
     "react": "PORT=3000 react-scripts start",
     "server": "nodemon --exec babel-node src/server/index.js --port 8080",
-    "runafterbuild": "node ./dist/server/"
+    "runafterbuild": "node ./dist/server/",
+    "runnodemon": "nodemon ./src/server --exec babel-node"
   },
   "eslintConfig": {
     "extends": "react-app"
