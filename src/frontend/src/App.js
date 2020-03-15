@@ -113,7 +113,7 @@ class App extends Component {
       <Layout className="layout">
         <Content style={{ padding: '0 50px' }}>
           <div style={{ margin: '10px 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div>
+            <div style={{ cursor: 'pointer' }} onClick={() => window.location.href = window.location.origin}>
               <img
                 src={require("./assets/notepad.png")}
                 alt="notepad"
