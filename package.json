@@ -13,7 +13,7 @@
     "express": "^4.17.1",
     "express-history-api-fallback": "^2.2.1",
     "http-status-codes": "^1.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "randomatic": "^3.1.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
